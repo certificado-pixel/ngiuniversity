@@ -43,7 +43,7 @@ export default function Home() {
           <Image src="/images/ngi-lotus.png" alt="" width={228} height={178} className="hero-lotus" aria-hidden="true" />
           <div className="container hero-grid">
             <div>
-              <span className="eyebrow">NGI University · Gringa &amp; Tande Carlos</span>
+              <span className="eyebrow">NGI University · AGRINGA &amp; Tande Carlos</span>
               <h1>
                 Do nail design à <em className="gold-text">sala de aula</em>.
               </h1>
@@ -77,17 +77,17 @@ export default function Home() {
 
             <div className="hero-media hero-duo">
               <Image
-                src="/images/gizelle-e-tande-duo.png"
-                alt="Tande Carlos e Gizelle Silva, A Gringa, fundadores da NGI University"
-                width={1138}
-                height={723}
+                src="/images/tande-e-agringa.jpg"
+                alt="Tande Carlos e Gizelle Silva, AGRINGA, fundadores da NGI University"
+                width={1800}
+                height={1108}
                 priority
                 sizes="(min-width: 900px) 55vw, 100vw"
                 className="hero-duo-img"
               />
               <div className="hero-names" aria-hidden="true">
                 <span>Tande Carlos</span>
-                <span>A Gringa</span>
+                <span>AGRINGA</span>
               </div>
             </div>
           </div>
@@ -391,7 +391,7 @@ export default function Home() {
                   <a href={site.social.instagramNGI} target="_blank" rel="noopener noreferrer">NGI University</a>
                 </li>
                 <li>
-                  <a href={site.social.instagramGringa} target="_blank" rel="noopener noreferrer">A Gringa</a>
+                  <a href={site.social.instagramGringa} target="_blank" rel="noopener noreferrer">AGRINGA</a>
                 </li>
                 <li>
                   <a href={site.social.instagramTande} target="_blank" rel="noopener noreferrer">Tande Carlos</a>

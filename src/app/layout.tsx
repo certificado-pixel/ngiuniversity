@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: site.description,
   keywords: [
     "NGI University",
-    "A Gringa",
+    "AGRINGA",
     "Gizelle Silva",
     "Tande Carlos",
     "nail design",

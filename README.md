@@ -1,6 +1,6 @@
 # NGI University: site institucional
 
-Site da NGI University (Gizelle Silva, A Gringa, e Tande Carlos). Feito em **Next.js 16 (App Router) + TypeScript**, CSS puro e fontes self-hosted (Bodoni Moda + Manrope via Fontsource). Pronto para GitHub + Vercel.
+Site da NGI University (Gizelle Silva, AGRINGA, e Tande Carlos). Feito em **Next.js 16 (App Router) + TypeScript**, CSS puro e fontes self-hosted (Bodoni Moda + Manrope via Fontsource). Pronto para GitHub + Vercel.
 
 ## Rodar localmente
 

@@ -10,7 +10,7 @@ export const site = {
   fullName: "Núcleo Global de Instrutores",
   url: "https://ngiuniversity.com.br", // TODO: domínio definitivo
   description:
-    "Cursos Educador Oficial, Educador Internacional e Educador Elite: o Plano de Carreira NGI para nail designers que querem ensinar, liderar e formar novos profissionais. Com Gizelle Silva, A Gringa, e Tande Carlos. Certificação com selo MEC em parceria com a FABRANI.",
+    "Cursos Educador Oficial, Educador Internacional e Educador Elite: o Plano de Carreira NGI para nail designers que querem ensinar, liderar e formar novos profissionais. Com Gizelle Silva, AGRINGA, e Tande Carlos. Certificação com selo MEC em parceria com a FABRANI.",
 
   // WhatsApp: somente números, com DDI + DDD. Ex.: 5511999999999
   whatsapp: "5500000000000", // TODO: número da equipe comercial
@@ -156,7 +156,7 @@ export const courses: Course[] = [
     ],
     highlight: {
       title: "Formação exclusiva em 2026",
-      text: "Cinco dias de formação em João Pessoa, de 25 a 29 de outubro, com Elena Lakutina e a curadoria de Gringa e Tande Carlos.",
+      text: "Cinco dias de formação em João Pessoa, de 25 a 29 de outubro, com Elena Lakutina e a curadoria de AGRINGA e Tande Carlos.",
     },
     cta: "Quero ser Educador Internacional",
     message: "Olá! Quero saber valores e condições do Educador Internacional com Elena Lakutina (25 a 29 de outubro, João Pessoa).",
@@ -217,7 +217,7 @@ export const faculty = {
   founders: [
     {
       name: "Gizelle Silva",
-      alias: "A Gringa",
+      alias: "AGRINGA",
       role: "Fundadora · Nail designer e educadora",
       bio: "Referência nacional em nail design e especialista em Soft Gel, Banho de Gel e Blindagem. Começou como profissional construindo o próprio caminho e hoje presenteia alunas do Plano de Carreira e prestigia as escolas das suas mentoradas. Sua didática une alto padrão estético e otimização do tempo de mesa, e é dela o desenvolvimento dos materiais didáticos da NGI.",
       quote: "Legado construído através da educação.",

@@ -1574,16 +1574,21 @@ svg.course-card-seal {
   position: relative;
   z-index: 1;
   width: 100%;
+  /* funde as bordas da foto com o fundo azul do topo */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 72%, transparent 100%), linear-gradient(to right, transparent 0%, #000 12%, #000 90%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 72%, transparent 100%), linear-gradient(to right, transparent 0%, #000 12%, #000 90%, transparent 100%);
+  mask-composite: intersect;
 }
 .hero-names {
   position: absolute;
   z-index: 2;
   left: 0;
   right: 0;
-  bottom: 6%;
+  bottom: 9%;
   display: flex;
   justify-content: space-between;
-  padding: 0 8% 0 12%;
+  padding: 0 14% 0 16%;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.2em;
