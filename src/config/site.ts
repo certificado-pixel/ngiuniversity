@@ -125,7 +125,7 @@ export const courses: Course[] = [
     id: "educador-internacional",
     level: "Nível 3",
     name: "Educador Internacional",
-    seal: null, // TODO: enviar o arquivo do selo "Educador Internacional" (ex.: "/images/selo-educador-internacional.png")
+    seal: "/images/selo-educador-internacional.png",
     theme: "internacional",
     tagline: "Expanda sua atuação, fortaleça sua autoridade e alcance novos mercados.",
     summary:
