@@ -40,7 +40,7 @@ export default function Home() {
       <main id="topo">
         {/* ---------------- HERO ---------------- */}
         <section className="hero dark">
-          <Image src="/images/ngi-lotus.png" alt="" width={228} height={178} className="hero-lotus" aria-hidden="true" />
+          <Image src="/images/ngi-lotus.png" unoptimized alt="" width={228} height={178} className="hero-lotus" aria-hidden="true" />
           <div className="container hero-grid">
             <div>
               <span className="eyebrow">NGI University · AGRINGA &amp; Tande Carlos</span>
@@ -66,12 +66,12 @@ export default function Home() {
                 </a>
               </div>
               <a href="#certificacao" className="trust">
-                <Image src="/images/selo-mec.png" alt="Selo Reconhecido pelo MEC" width={357} height={440} className="trust-mec" />
+                <Image src="/images/selo-mec.png" unoptimized alt="Selo Reconhecido pelo MEC" width={357} height={440} className="trust-mec" />
                 <span className="trust-text">
                   Certificação com selo MEC
                   <small>em parceria com</small>
                 </span>
-                <Image src="/images/fabrani-branco.png" alt="FABRANI, Faculdade Brasileira de Negócios Inovadores" width={900} height={192} className="trust-fabrani" />
+                <Image src="/images/fabrani-branco.png" unoptimized alt="FABRANI, Faculdade Brasileira de Negócios Inovadores" width={1847} height={394} className="trust-fabrani" />
               </a>
             </div>
 
@@ -82,7 +82,8 @@ export default function Home() {
                 width={1800}
                 height={1108}
                 priority
-                sizes="(min-width: 900px) 55vw, 100vw"
+                sizes="(min-width: 900px) 60vw, 100vw"
+                quality={90}
                 className="hero-duo-img"
               />
               <div className="hero-names" aria-hidden="true">
@@ -265,7 +266,7 @@ export default function Home() {
         <section id="certificacao" className="section dark cert">
           <div className="container">
             <div className="cert-hero reveal">
-              <Image src="/images/selo-mec.png" alt="Selo Reconhecido pelo MEC" width={357} height={440} className="cert-mec" />
+              <Image src="/images/selo-mec.png" unoptimized alt="Selo Reconhecido pelo MEC" width={357} height={440} className="cert-mec" />
               <div>
                 <span className="eyebrow">Certificação</span>
                 <h2 className="h2">
@@ -277,7 +278,7 @@ export default function Home() {
                 </p>
                 <div className="cert-partner">
                   <span>Parceria acadêmica</span>
-                  <Image src="/images/fabrani-branco.png" alt="FABRANI, Faculdade Brasileira de Negócios Inovadores" width={900} height={192} />
+                  <Image src="/images/fabrani-branco.png" unoptimized alt="FABRANI, Faculdade Brasileira de Negócios Inovadores" width={1847} height={394} />
                 </div>
               </div>
             </div>
@@ -334,7 +335,7 @@ export default function Home() {
         {/* ---------------- CTA FINAL ---------------- */}
         <section className="section dark cta">
           <div className="container reveal">
-            <Image src="/images/ngi-lotus.png" alt="" width={228} height={178} className="cta-lotus" aria-hidden="true" />
+            <Image src="/images/ngi-lotus.png" unoptimized alt="" width={228} height={178} className="cta-lotus" aria-hidden="true" />
             <span className="eyebrow">Próximas turmas</span>
             <h2>
               Seu talento merece ser <em className="gold-text">ensinado</em>.
@@ -355,11 +356,11 @@ export default function Home() {
         <div className="container">
           <div className="footer-grid">
             <div>
-              <Image src="/images/ngi-logo.png" alt="NGI University · Núcleo Global de Instrutores" width={431} height={583} className="footer-logo" />
-              <div className="footer-partner">
-                <Image src="/images/selo-mec.png" alt="Selo Reconhecido pelo MEC" width={357} height={440} className="footer-mec" />
-                <Image src="/images/fabrani-branco.png" alt="FABRANI" width={900} height={192} className="footer-fabrani" />
-              </div>
+              <Image src="/images/ngi-logo.png" unoptimized alt="NGI University · Núcleo Global de Instrutores" width={431} height={583} className="footer-logo" />
+              <a className="footer-partner" href="https://fabrani.com.br" target="_blank" rel="noopener noreferrer" aria-label="Site da FABRANI, Faculdade Brasileira de Negócios Inovadores">
+                <Image src="/images/selo-mec.png" unoptimized alt="Selo Reconhecido pelo MEC" width={357} height={440} className="footer-mec" />
+                <Image src="/images/fabrani-branco.png" unoptimized alt="FABRANI" width={1847} height={394} className="footer-fabrani" />
+              </a>
             </div>
             <div>
               <h4>Navegação</h4>
@@ -394,13 +395,20 @@ export default function Home() {
                 <li>
                   <a href={`mailto:${site.email}`}>{site.email}</a>
                 </li>
+                <li>
+                  <a href="https://fabrani.com.br" target="_blank" rel="noopener noreferrer">fabrani.com.br</a>
+                </li>
               </ul>
             </div>
           </div>
           <div className="footer-bottom">
             <span>© {new Date().getFullYear()} NGI University · Núcleo Global de Instrutores.</span>
             <span>
-              Certificação com selo MEC em parceria com a {site.certifier.name}, {site.certifier.fullName}.
+              Certificação com selo MEC em parceria com a{" "}
+              <a href="https://fabrani.com.br" target="_blank" rel="noopener noreferrer" className="footer-link">
+                {site.certifier.name}, {site.certifier.fullName}
+              </a>
+              .
             </span>
           </div>
         </div>

@@ -24,7 +24,7 @@ export default function Header() {
     <header className={`header ${scrolled || open ? "scrolled" : ""}`}>
       <div className="container header-inner">
         <a href="#topo" className="logo" aria-label="NGI University, início" onClick={() => setOpen(false)}>
-          <Image src="/images/ngi-mark.png" alt="" width={326} height={382} priority className="logo-mark" />
+          <Image src="/images/ngi-mark.png" unoptimized alt="" width={326} height={382} priority className="logo-mark" />
           <span className="logo-text">
             Núcleo Global
             <br />

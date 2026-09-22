@@ -1644,3 +1644,14 @@ svg.course-card-seal {
     margin-right: -120px;
   }
 }
+
+.footer-partner {
+  transition: opacity 0.2s;
+}
+.footer-partner:hover {
+  opacity: 0.85;
+}
+.footer-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
