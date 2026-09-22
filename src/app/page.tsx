@@ -234,8 +234,7 @@ export default function Home() {
                 </h2>
               </div>
               <p className="lead">
-                Uma equipe de especialistas que une o melhor da técnica global, da didática e da gestão de negócios na
-                beleza.
+                Duas trajetórias que unem o melhor da técnica, da didática e da gestão de negócios na beleza.
               </p>
             </div>
 
@@ -259,18 +258,6 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="team">
-              {faculty.team.map((t) => (
-                <article className="team-card reveal" key={t.name}>
-                  <div className="team-media">
-                    <Photo src={t.image} alt={t.name} label={`Foto · ${t.name}`} light sizes="(min-width: 900px) 33vw, 100vw" />
-                  </div>
-                  <span className="role">{t.role}</span>
-                  <h3>{t.name}</h3>
-                  <p>{t.bio}</p>
-                </article>
-              ))}
-            </div>
           </div>
         </section>
 
