@@ -64,8 +64,8 @@ export default function Home() {
               <a href="#certificacao" className="trust">
                 <Image src="/images/selo-mec.png" unoptimized alt="Selo Reconhecido pelo MEC" width={357} height={440} className="trust-mec" />
                 <span className="trust-text">
-                  Certificação com selo MEC
-                  <small>em parceria com</small>
+                  Certificado de extensão universitária
+                  <small>selo MEC · em parceria com</small>
                 </span>
                 <Image src="/images/fabrani-branco.png" unoptimized alt="FABRANI, Faculdade Brasileira de Negócios Inovadores" width={1847} height={394} className="trust-fabrani" />
               </a>
@@ -304,13 +304,15 @@ export default function Home() {
             <div className="cert-hero reveal">
               <Image src="/images/selo-mec.png" unoptimized alt="Selo Reconhecido pelo MEC" width={357} height={440} className="cert-mec" />
               <div>
-                <span className="eyebrow">Certificação</span>
+                <span className="eyebrow">Certificado de extensão universitária</span>
                 <h2 className="h2">
                   Certificação com <em className="gold-text">selo MEC</em>, em parceria com a FABRANI.
                 </h2>
                 <p className="lead" style={{ marginTop: 22 }}>
-                  Os cursos seguem projeto pedagógico de extensão da {site.certifier.fullName}, com coordenação do{" "}
-                  {site.certifier.coordinator}. Um certificado com peso acadêmico para a sua carreira de educador.
+                  Ao concluir, você recebe um <strong className="cert-strong">certificado de extensão universitária</strong>{" "}
+                  emitido em parceria com a {site.certifier.fullName}. Os cursos seguem projeto pedagógico de extensão,
+                  com coordenação do {site.certifier.coordinator}. Um certificado com peso acadêmico para a sua carreira de
+                  educador.
                 </p>
                 <div className="cert-partner">
                   <span>Parceria acadêmica</span>

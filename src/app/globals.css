@@ -1945,3 +1945,8 @@ svg.course-card-seal {
     display: none;
   }
 }
+
+.cert-strong {
+  color: var(--gold-light);
+  font-weight: 700;
+}

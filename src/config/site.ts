@@ -264,10 +264,10 @@ export const faculty = {
 };
 
 export const certification = [
-  { title: "Selo MEC em parceria com a FABRANI", text: "Os cursos da NGI University são de extensão, com projeto pedagógico da FABRANI, Faculdade Brasileira de Negócios Inovadores, e certificação com selo MEC." },
+  { title: "Extensão universitária", text: "Os cursos da NGI University são de extensão universitária, com projeto pedagógico da FABRANI, Faculdade Brasileira de Negócios Inovadores, e certificação com selo MEC." },
   { title: "Avaliação", text: "Questionário ao final do curso, com correção na hora. Em caso de reprovação, há exame com análise de caso concreto (nota mínima 7,0)." },
   { title: "Material e plataforma", text: "Apostila e slides. As aulas ao vivo ficam gravadas na plataforma EaD, com acesso enviado antes do início do curso." },
-  { title: "Certificado", text: "Cumpridos todos os módulos e aprovado em todas as etapas, o aluno recebe o certificado. No Elite, o título é concedido pela banca." },
+  { title: "Certificado", text: "Cumpridos todos os módulos e aprovado em todas as etapas, o aluno recebe o certificado de extensão universitária. No Elite, o título é concedido pela banca." },
 ];
 
 export const faq = [
