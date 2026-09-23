@@ -1666,3 +1666,121 @@ svg.course-card-seal {
   opacity: 0.85;
   transform: translateY(-2px);
 }
+
+/* ---------- Instagram ---------- */
+.insta {
+  background:
+    radial-gradient(50% 60% at 50% 0%, rgba(47, 79, 159, 0.35), transparent 70%),
+    var(--navy-900);
+}
+.insta-head {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.insta-head .h2 {
+  margin-top: 0;
+}
+.insta-card {
+  max-width: 620px;
+  margin: 0 auto;
+  border: 1px solid var(--line-dark);
+  border-radius: 20px;
+  background: rgba(8, 16, 38, 0.6);
+  overflow: hidden;
+}
+.insta-profile {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 24px;
+}
+.insta-avatar {
+  flex: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--navy-950);
+  border: 2px solid var(--gold);
+}
+.insta-avatar img {
+  width: 34px;
+  height: auto;
+}
+.insta-meta {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.insta-meta strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  color: var(--ivory);
+}
+.insta-meta strong svg {
+  width: 18px;
+  height: 18px;
+  color: var(--gold);
+}
+.insta-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+.insta-bio {
+  font-size: 14px;
+  color: var(--muted-dark);
+}
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  padding: 0 24px;
+}
+.insta-post {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--navy-800);
+}
+.insta-post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.3s;
+}
+.insta-post:hover img {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+.insta-cta {
+  display: block;
+  text-align: center;
+  padding: 18px;
+  margin-top: 24px;
+  border-top: 1px solid var(--line-dark);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: background 0.2s, color 0.2s;
+}
+.insta-cta:hover {
+  background: rgba(201, 164, 95, 0.08);
+  color: var(--gold-light);
+}
+@media (max-width: 480px) {
+  .insta-profile {
+    padding: 18px;
+  }
+  .insta-grid {
+    padding: 0 12px;
+  }
+}

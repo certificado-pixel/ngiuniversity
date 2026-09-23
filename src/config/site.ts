@@ -289,3 +289,19 @@ export const faq = [
     a: "Chame a equipe no WhatsApp: enviamos as próximas turmas, o local, os valores e as condições.", // TODO: se quiser, informar aqui
   },
 ];
+
+/** Vitrine do Instagram (imagens estáticas em /public/images/instagram — troque quando quiser atualizar) */
+export const instagramFeed = {
+  handle: "nucleoglobal.oficial",
+  name: "NGI | UNIVERSITY",
+  bio: "A Universidade dos Grandes Educadores. Metodologias nacionais e internacionais · Extensão universitária MEC.",
+  url: "https://www.instagram.com/nucleoglobal.oficial/",
+  posts: [
+    { img: "/images/instagram/post-1.jpg", url: "https://www.instagram.com/nucleoglobal.oficial/p/Da4DlrYtsKo/", alt: "Educador Internacional, 25 a 29 de outubro de 2026, João Pessoa" },
+    { img: "/images/instagram/post-2.jpg", url: "https://www.instagram.com/nucleoglobal.oficial/p/DccFWH_NkWT/", alt: "Educador NGI, 27 a 30 de novembro de 2026, João Pessoa" },
+    { img: "/images/instagram/post-3.jpg", url: "https://www.instagram.com/nucleoglobal.oficial/p/DcTr8nrFU3T/", alt: "Até onde a sua profissão pode te levar?" },
+    { img: "/images/instagram/post-4.jpg", url: "https://www.instagram.com/nucleoglobal.oficial/p/DcOhIWnFfLW/", alt: "Plano de Carreira NGI" },
+    { img: "/images/instagram/post-5.jpg", url: "https://www.instagram.com/nucleoglobal.oficial/p/Da3mZVVNPJB/", alt: "O legado: NGI e Business & Art" },
+    { img: "/images/instagram/post-6.jpg", url: "https://www.instagram.com/nucleoglobal.oficial/p/Da2lyKvldG2/", alt: "Toda grande carreira precisa de um caminho" },
+  ],
+};

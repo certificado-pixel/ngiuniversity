@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import CourseSection from "@/components/CourseSection";
 import CourseSeal from "@/components/CourseSeal";
 import { ArrowIcon, InstagramIcon, PlusIcon, WhatsAppIcon } from "@/components/icons";
-import { careerPlan, certification, courses, faculty, faq, nav, pillars, site, whatsappLink } from "@/config/site";
+import { careerPlan, certification, courses, faculty, faq, instagramFeed, nav, pillars, site, whatsappLink } from "@/config/site";
 
 const marqueeWords = ["Metodologia NGI", "Educador Oficial", "Educador Internacional", "Educador Elite", "Padrão internacional", "Selo MEC", "Parceria FABRANI", "Liderança", "Didática"];
 
@@ -259,6 +259,46 @@ export default function Home() {
               ))}
             </div>
 
+          </div>
+        </section>
+
+        {/* ---------------- INSTAGRAM ---------------- */}
+        <section id="instagram" className="section dark insta">
+          <div className="container">
+            <div className="insta-head reveal">
+              <span className="eyebrow">Instagram</span>
+              <h2 className="h2">
+                Acompanhe a NGI no <em>dia a dia</em>.
+              </h2>
+              <p className="lead">Formaturas, bastidores, próximas turmas e conteúdo para educadores.</p>
+            </div>
+
+            <div className="insta-card reveal">
+              <a className="insta-profile" href={instagramFeed.url} target="_blank" rel="noopener noreferrer">
+                <span className="insta-avatar">
+                  <Image src="/images/ngi-mark.png" unoptimized alt="" width={326} height={382} />
+                </span>
+                <span className="insta-meta">
+                  <strong>
+                    @{instagramFeed.handle} <InstagramIcon />
+                  </strong>
+                  <span className="insta-name">{instagramFeed.name}</span>
+                  <span className="insta-bio">{instagramFeed.bio}</span>
+                </span>
+              </a>
+
+              <div className="insta-grid">
+                {instagramFeed.posts.map((p) => (
+                  <a key={p.url} href={p.url} target="_blank" rel="noopener noreferrer" className="insta-post" aria-label={p.alt}>
+                    <Image src={p.img} alt={p.alt} width={360} height={480} sizes="(min-width: 760px) 200px, 33vw" />
+                  </a>
+                ))}
+              </div>
+
+              <a className="insta-cta" href={instagramFeed.url} target="_blank" rel="noopener noreferrer">
+                Seguir no Instagram
+              </a>
+            </div>
           </div>
         </section>
 
