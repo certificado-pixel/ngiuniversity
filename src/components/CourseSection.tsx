@@ -1,6 +1,5 @@
 import type { Course } from "@/config/site";
-import { whatsappLink } from "@/config/site";
-import { CheckIcon, InstagramIcon, PlusIcon, WhatsAppIcon } from "./icons";
+import { CheckIcon, InstagramIcon, PlusIcon } from "./icons";
 import CourseSeal from "./CourseSeal";
 
 export default function CourseSection({ course }: { course: Course }) {
@@ -34,11 +33,6 @@ export default function CourseSection({ course }: { course: Course }) {
             <strong>Para quem é</strong>
             <p>{course.audience}</p>
           </div>
-
-          <a className="btn btn-primary" href={whatsappLink(course.message)} target="_blank" rel="noopener noreferrer">
-            <WhatsAppIcon />
-            {course.cta}
-          </a>
         </div>
 
         <div className="course-content">

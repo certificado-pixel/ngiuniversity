@@ -57,10 +57,6 @@ export default function Home() {
                 <li>Metodologia NGI</li>
               </ul>
               <div className="hero-actions">
-                <a className="btn btn-primary" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
-                  <WhatsAppIcon />
-                  Quero garantir minha vaga
-                </a>
                 <a className="btn btn-ghost" href="#cursos">
                   Conhecer os cursos
                 </a>
@@ -383,12 +379,6 @@ export default function Home() {
               Seu talento merece ser <em className="gold-text">ensinado</em>.
             </h2>
             <p className="lead">Fale com a equipe NGI e descubra qual curso é o próximo passo da sua carreira.</p>
-            <div className="hero-actions">
-              <a className="btn btn-primary" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
-                <WhatsAppIcon />
-                Falar no WhatsApp
-              </a>
-            </div>
           </div>
         </section>
       </main>
