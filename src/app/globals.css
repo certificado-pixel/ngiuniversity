@@ -1563,6 +1563,7 @@ svg.course-card-seal {
   align-self: end;
 }
 .hero-duo::before {
+  display: none;
   content: "";
   position: absolute;
   inset: 5% 5% 15% 5%;
@@ -1628,8 +1629,9 @@ svg.course-card-seal {
   }
   .hero-duo-img {
     width: 100%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 10%, #000 78%, transparent 100%), linear-gradient(to right, transparent 0%, #000 18%, #000 94%, transparent 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, #000 10%, #000 78%, transparent 100%), linear-gradient(to right, transparent 0%, #000 18%, #000 94%, transparent 100%);
+    /* vinheta: a foto se dissolve no fundo em todas as bordas, sem corte aparente */
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 70%, transparent 96%), linear-gradient(to right, transparent 0%, #000 20%, #000 72%, transparent 97%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 70%, transparent 96%), linear-gradient(to right, transparent 0%, #000 20%, #000 72%, transparent 97%);
   }
   .hero-names {
     bottom: 14%;
