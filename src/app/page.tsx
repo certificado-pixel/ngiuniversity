@@ -40,7 +40,7 @@ export default function Home() {
       <main id="topo">
         {/* ---------------- HERO ---------------- */}
         <section className="hero dark">
-          <Image src="/images/ngi-lotus.png" unoptimized alt="" width={228} height={178} className="hero-lotus" aria-hidden="true" />
+          <Image src="/images/lotus-line.svg" unoptimized alt="" width={600} height={440} className="hero-lotus" aria-hidden="true" />
           <div className="container hero-grid">
             <div>
               <span className="eyebrow">NGI University · AGRINGA &amp; Tande Carlos</span>
