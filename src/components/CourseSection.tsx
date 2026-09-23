@@ -79,12 +79,17 @@ export default function CourseSection({ course }: { course: Course }) {
           {course.modules && (
           <div className="reveal">
             <h3 className="block-title">Grade curricular · {course.modules.length} módulos</h3>
+            <p className="modules-hint">Clique em cada módulo para ver as aulas.</p>
             <div className="modules">
               {course.modules.map((m, i) => (
                 <details className="module" key={m.title} open={i === 0}>
                   <summary>
                     <span className="module-n">{String(i + 1).padStart(2, "0")}</span>
                     <span className="module-title">{m.title}</span>
+                    <span className="module-toggle" aria-hidden="true">
+                      <span className="when-closed">Ver aulas</span>
+                      <span className="when-open">Fechar</span>
+                    </span>
                     <span className="plus">
                       <PlusIcon />
                     </span>

@@ -1884,3 +1884,64 @@ svg.course-card-seal {
     padding-bottom: 48px;
   }
 }
+
+/* ---------- Cartões dos cursos: levantam ao passar o mouse ---------- */
+.course-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.course-card:hover,
+.js .course-card.reveal.in:hover {
+  transform: translateY(-8px);
+  border-color: rgba(234, 211, 160, 0.55);
+  box-shadow: 0 30px 60px -28px rgba(0, 0, 0, 0.7);
+}
+@media (prefers-reduced-motion: reduce) {
+  .course-card,
+  .course-card:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* ---------- Grade curricular: deixa claro que é clicável ---------- */
+.modules-hint {
+  margin: -8px 0 14px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.dark .modules-hint {
+  color: var(--muted-dark);
+}
+.module summary {
+  transition: background 0.2s;
+  border-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0 -8px;
+}
+.module summary:hover {
+  background: rgba(201, 164, 95, 0.08);
+}
+.module-toggle {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  white-space: nowrap;
+}
+.dark .module-toggle {
+  color: var(--gold);
+}
+.module-toggle .when-open,
+.module[open] .module-toggle .when-closed {
+  display: none;
+}
+.module[open] .module-toggle .when-open {
+  display: inline;
+}
+@media (max-width: 420px) {
+  .module-toggle {
+    display: none;
+  }
+}
