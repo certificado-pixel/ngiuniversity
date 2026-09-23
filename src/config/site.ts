@@ -44,8 +44,8 @@ export function whatsappLink(message = "Olá! Vim pelo site da NGI University e 
 
 export const nav = [
   { label: "A NGI", href: "#sobre" },
-  { label: "Cursos", href: "#cursos" },
   { label: "Plano de Carreira", href: "#plano-de-carreira" },
+  { label: "Cursos", href: "#cursos" },
   { label: "Docentes", href: "#docentes" },
   { label: "Certificação", href: "#certificacao" },
   { label: "Dúvidas", href: "#faq" },

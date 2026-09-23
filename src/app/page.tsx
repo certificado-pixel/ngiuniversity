@@ -427,9 +427,6 @@ export default function Home() {
                 <li>
                   <a href={`mailto:${site.email}`}>{site.email}</a>
                 </li>
-                <li>
-                  <a href="https://fabrani.com.br" target="_blank" rel="noopener noreferrer">fabrani.com.br</a>
-                </li>
               </ul>
             </div>
           </div>
