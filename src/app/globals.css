@@ -1784,3 +1784,25 @@ svg.course-card-seal {
     padding: 0 12px;
   }
 }
+
+/* ajustes de celular pequeno */
+.insta-meta strong {
+  flex-wrap: wrap;
+  word-break: break-word;
+}
+.guest-ig {
+  min-height: 40px;
+}
+@media (max-width: 360px) {
+  .insta-profile {
+    gap: 12px;
+    padding: 16px;
+  }
+  .insta-avatar {
+    width: 56px;
+    height: 56px;
+  }
+  .insta-meta strong {
+    font-size: 15px;
+  }
+}
