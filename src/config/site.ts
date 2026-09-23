@@ -12,8 +12,10 @@ export const site = {
   description:
     "Cursos Educador Oficial, Educador Internacional e Educador Elite: o Plano de Carreira NGI para nail designers que querem ensinar, liderar e formar novos profissionais. Com Gizelle Silva, AGRINGA, e Tande Carlos. Certificação com selo MEC em parceria com a FABRANI.",
 
-  // WhatsApp: somente números, com DDI + DDD. Ex.: 5511999999999
-  whatsapp: "5500000000000", // TODO: número da equipe comercial
+  // Link oficial de WhatsApp da NGI (mesmo da bio do Instagram)
+  whatsappUrl: "https://wa.me/message/43NQ3WEVQTSUJ1",
+  // Se quiser mensagens pré-preenchidas por curso, informe o número (DDI + DDD, só dígitos). Ex.: 5583999999999
+  whatsapp: "",
 
   social: {
     instagramNGI: "https://www.instagram.com/nucleoglobal.oficial/",
@@ -30,8 +32,13 @@ export const site = {
   },
 };
 
-/** Monta o link do WhatsApp com mensagem pré-preenchida */
+/**
+ * Link do WhatsApp.
+ * - Sem número cadastrado: usa o link oficial (wa.me/message/...). Esse tipo de link não aceita mensagem pronta.
+ * - Com número em `site.whatsapp`: abre a conversa já com a mensagem do curso.
+ */
 export function whatsappLink(message = "Olá! Vim pelo site da NGI University e quero saber mais sobre os cursos da NGI University.") {
+  if (!site.whatsapp) return site.whatsappUrl;
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;
 }
 
