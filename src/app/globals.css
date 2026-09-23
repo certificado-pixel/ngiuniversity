@@ -1655,3 +1655,12 @@ svg.course-card-seal {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+.cert-partner-link {
+  display: inline-block;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.cert-partner-link:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}

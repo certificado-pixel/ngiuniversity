@@ -278,7 +278,9 @@ export default function Home() {
                 </p>
                 <div className="cert-partner">
                   <span>Parceria acadêmica</span>
-                  <Image src="/images/fabrani-branco.png" unoptimized alt="FABRANI, Faculdade Brasileira de Negócios Inovadores" width={1847} height={394} />
+                  <a href="https://fabrani.com.br" target="_blank" rel="noopener noreferrer" aria-label="Site da FABRANI, Faculdade Brasileira de Negócios Inovadores" className="cert-partner-link">
+                    <Image src="/images/fabrani-branco.png" unoptimized alt="FABRANI, Faculdade Brasileira de Negócios Inovadores" width={1847} height={394} />
+                  </a>
                 </div>
               </div>
             </div>
