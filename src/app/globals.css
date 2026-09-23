@@ -1874,3 +1874,13 @@ svg.course-card-seal {
 .header.is-open {
   background: var(--navy-950);
 }
+
+/* faixa de palavras: só no computador */
+@media (max-width: 899px) {
+  .marquee {
+    display: none;
+  }
+  .hero {
+    padding-bottom: 48px;
+  }
+}
